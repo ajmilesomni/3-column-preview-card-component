@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 4rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: xx-large;
+    text-transform: uppercase;
+
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 0;
+    font-size: 15px;
+
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 16px;
+    padding: 12px;
+    border: 0;
+    width: 6.5rem;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.seden-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.box {
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.seden {
+    background-color: hsl(31, 77%, 52%);
+
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 735px) {
+    body {
+        height: 100%;
+        padding: 2.5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 19rem;
+        border-radius: 8px;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    button {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 735px) {
+    .container {
+        display: flex;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        width: 52rem;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    button {
+        margin-top: 3rem;
+    }
+}
